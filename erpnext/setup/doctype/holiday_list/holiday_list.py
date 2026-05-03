@@ -199,6 +199,19 @@ def is_holiday(holiday_list, date=None):
 		return False
 
 
+def is_half_holiday(holiday_list, date=None):
+	"""Returns true if the given date is a half-day holiday in the given holiday list"""
+	if date is None:
+		date = today()
+	if holiday_list:
+		return bool(
+			frappe.db.exists(
+				"Holiday", {"parent": holiday_list, "holiday_date": date, "is_half_day": 1}, cache=True
+			)
+		)
+	return False
+
+
 def local_country_name(country_code: str) -> str:
 	"""Return the localized country name for the given country code."""
 	from babel import Locale

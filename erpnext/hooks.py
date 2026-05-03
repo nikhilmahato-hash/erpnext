@@ -1,5 +1,5 @@
 app_name = "erpnext"
-app_title = "ERPNext"
+app_title = "Vitto"
 app_publisher = "Frappe Technologies Pvt. Ltd."
 app_description = """ERP made simple"""
 app_icon = "fa fa-th"
@@ -7,14 +7,14 @@ app_color = "#e74c3c"
 app_email = "hello@frappe.io"
 app_license = "GNU General Public License (v3)"
 source_link = "https://github.com/frappe/erpnext"
-app_logo_url = "/assets/erpnext/images/erpnext-logo.svg"
+app_logo_url = "/assets/erpnext/images/VittoLogo.png"
 
 
 add_to_apps_screen = [
 	{
 		"name": "erpnext",
-		"logo": "/assets/erpnext/images/erpnext-logo-blue.png",
-		"title": "ERPNext",
+		"logo": "/assets/erpnext/images/VittoLogo.png",
+		"title": "Vitto",
 		"route": "/app/home",
 		"has_permission": "erpnext.check_app_permission",
 	}
@@ -109,8 +109,8 @@ calendars = ["Task", "Work Order", "Sales Order", "Holiday List", "ToDo"]
 website_generators = ["BOM", "Sales Partner"]
 
 website_context = {
-	"favicon": "/assets/erpnext/images/erpnext-favicon.svg",
-	"splash_image": "/assets/erpnext/images/erpnext-logo.svg",
+	"favicon": "/assets/erpnext/images/VittoLogo.png",
+	"splash_image": "/assets/erpnext/images/VittoLogo.png",
 }
 
 # nosemgrep
@@ -480,8 +480,8 @@ default_mail_footer = """
 	<span>
 		Sent via
 		<a class="text-muted" href="https://frappe.io/erpnext?source=via_email_footer" target="_blank">
-			ERPNext
-		</a>
+			Vitto
+</a>
 	</span>
 """
 
